@@ -27,11 +27,16 @@
                         </tr>
                     </thead>
                     <tbody id="tbody"></tbody>
-                    <caption><br>4000 - Maia / 4001 - Santo Tirso</caption>
+                    <caption><br>4000 - Maia / 4100 - Santo Tirso</caption>
                 </table>
                 <img src="wegst.png" width="495px">
             </div>
         </center>
+        <article>
+            <button class="scrollTop" onclick="backTop();">  
+                <img src="arrow.svg" alt="">
+            </button>
+        </article>
         <script>
             var tbody = document.getElementById('tbody');
 
@@ -41,10 +46,70 @@
                 ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
                 ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
                 ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
-                ["4001", "Guilherme Nogueira", "231567890", "Rua Luis Pacheco Segundo, 999", "4760-110", "Trofa", "936112990", "nogueira@gmail.com"],
-                ["4001", "Tiago Pinto", "216923012", "Rua do Trapaço, 812", "4780-134", "Santo Tirso", "924810251", "tiagopinto@gmail.com"],
-                ["4001", "Rubén Sousa", "209247812", "Av. da Boavista, 532", "3012-790", "Porto", "931891567", "rb@outlook.com"],
-                ["4001", "Gabriel Lopes", "199671291", "Rua Bandeira Nacional, 2166", "2981-041", "Moscavide", "934671923", "gabilopes@gmail.com"]
+                ["4100", "Guilherme Nogueira", "231567890", "Rua Luis Pacheco Segundo, 999", "4760-110", "Trofa", "936112990", "nogueira@gmail.com"],
+                ["4100", "Tiago Pinto", "216923012", "Rua do Trapaço, 812", "4780-134", "Santo Tirso", "924810251", "tiagopinto@gmail.com"],
+                ["4100", "Rubén Sousa", "209247812", "Av. da Boavista, 532", "3012-790", "Porto", "931891567", "rb@outlook.com"],
+                ["4100", "Gabriel Lopes", "199671291", "Rua Bandeira Nacional, 2166", "2981-041", "Moscavide", "934671923", "gabilopes@gmail.com"],
+                ["4000", "Marley Neto Freiria", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4100", "Guilherme Nogueira", "231567890", "Rua Luis Pacheco Segundo, 999", "4760-110", "Trofa", "936112990", "nogueira@gmail.com"],
+                ["4100", "Tiago Pinto", "216923012", "Rua do Trapaço, 812", "4780-134", "Santo Tirso", "924810251", "tiagopinto@gmail.com"],
+                ["4100", "Rubén Sousa", "209247812", "Av. da Boavista, 532", "3012-790", "Porto", "931891567", "rb@outlook.com"],
+                ["4100", "Gabriel Lopes", "199671291", "Rua Bandeira Nacional, 2166", "2981-041", "Moscavide", "934671923", "gabilopes@gmail.com"],
+                ["4000", "Jussara Escobar Guerra", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4100", "Guilherme Nogueira", "231567890", "Rua Luis Pacheco Segundo, 999", "4760-110", "Trofa", "936112990", "nogueira@gmail.com"],
+                ["4100", "Tiago Pinto", "216923012", "Rua do Trapaço, 812", "4780-134", "Santo Tirso", "924810251", "tiagopinto@gmail.com"],
+                ["4100", "Rubén Sousa", "209247812", "Av. da Boavista, 532", "3012-790", "Porto", "931891567", "rb@outlook.com"],
+                ["4100", "Gabriel Lopes", "199671291", "Rua Bandeira Nacional, 2166", "2981-041", "Moscavide", "934671923", "gabilopes@gmail.com"],
+                ["4000", "Clara Sardo Machado", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"],
+                ["4000", "André Jorge", "261954964", "Rua da Palmeira, 091", "2419-111", "Valongo", "914456012", "andrejorge@gmail.com"],
+                ["4000", "Rui Pedro", "215689123", "Rua Espaçosa da Pedra, 921", "5621-102", "Chaves", "932041124", "pedrorui@gmail.com"],
+                ["4000", "Luís Rodrigo", "213424176", "Rua Apertadinha da Beira, 20", "1209-190", "Matosinhos", "931900123", "luisrodri@gmail.com"],
+                ["4000", "Jorge Cunha", "231567890", "Av. Alberto Conde, 102", "5712-831", "Maia", "918765123", "jorgecunha@gmail.com"]
             ];
 
             for (var i = 0; i < dados.length; i++) {
@@ -86,6 +151,20 @@
                     }
                 }
             });
+
+            //scrollTop
+
+            window.addEventListener('scroll', function() {
+                var scroll = document.querySelector('.scrollTop')
+                    scroll.classList.toggle('active', window.scrollY > 450)
+            })
+
+            function backTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            }
 
         </script> 
     </html>
